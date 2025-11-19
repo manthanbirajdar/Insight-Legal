@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsightLegal - Your Trusted AI Legal Partner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h2>InsightLegal</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#insights">Insights</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="btn btn--primary btn--sm">Login</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Your Trusted Legal Partner</h1>
+                <p>Harness the power of AI to analyze legal documents, assess risks, and get expert consultation. Professional legal services backed by cutting-edge technology.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn--primary btn--lg" onclick="openDocumentAnalysis()">Analyze Document</button>
+                    <button class="btn btn--outline btn--lg" onclick="openConsultationBooking()">Book Consultation</button>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">10K+</span>
+                    <span class="stat-label">Documents Analyzed</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">98%</span>
+                    <span class="stat-label">Accuracy Rate</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">AI Support</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>AI-Powered Legal Solutions</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI-Powered Analysis</h3>
+                    <p>Advanced artificial intelligence analyzes legal documents with precision and speed</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Risk Assessment</h3>
+                    <p>Identify potential legal risks and compliance issues before they become problems</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast Processing</h3>
+                    <p>Get instant results and insights in seconds, not hours or days</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure Platform</h3>
+                    <p>Bank-level security ensures your sensitive legal documents are protected</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>Expert Consultation</h3>
+                    <p>Connect with legal experts for personalized advice and guidance</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Detailed Reports</h3>
+                    <p>Comprehensive analysis reports with actionable recommendations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services & Pricing</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Document Analysis</h3>
+                    <div class="service-price">₹100</div>
+                    <p>AI-powered analysis of legal documents with risk identification and compliance checking</p>
+                    <ul class="service-features">
+                        <li>✓ Automated risk detection</li>
+                        <li>✓ Compliance verification</li>
+                        <li>✓ Detailed analysis report</li>
+                        <li>✓ 24/7 processing</li>
+                    </ul>
+                    <button class="btn btn--primary btn--full-width" onclick="openDocumentAnalysis()">Start Analysis</button>
+                </div>
+                <div class="service-card featured">
+                    <div class="service-badge">Most Popular</div>
+                    <h3>Risk Assessment</h3>
+                    <div class="service-price">₹80</div>
+                    <p>Comprehensive evaluation of legal risks with AI-driven insights and recommendations</p>
+                    <ul class="service-features">
+                        <li>✓ Risk scoring system</li>
+                        <li>✓ Mitigation strategies</li>
+                        <li>✓ Priority recommendations</li>
+                        <li>✓ Interactive assessment</li>
+                    </ul>
+                    <button class="btn btn--primary btn--full-width" onclick="openRiskAssessment()">Start Assessment</button>
+                </div>
+                <div class="service-card">
+                    <h3>Consultation Session</h3>
+                    <div class="service-price">₹150</div>
+                    <p>One-on-one consultation with legal experts backed by AI research and analysis</p>
+                    <ul class="service-features">
+                        <li>✓ Expert legal advice</li>
+                        <li>✓ AI-backed research</li>
+                        <li>✓ Personalized guidance</li>
+                        <li>✓ Follow-up support</li>
+                    </ul>
+                    <button class="btn btn--primary btn--full-width" onclick="openConsultationBooking()">Book Session</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p>"InsightLegal's AI analysis helped me understand complex contracts in minutes. Their risk assessment tool saved my business from potential legal issues."</p>
+                    <div class="testimonial-author">
+                        <strong>Rajesh Kumar</strong>
+                        <span>Business Owner</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p>"The document analysis feature is incredibly accurate. It's like having an expert legal assistant available 24/7. Highly recommend for law firms."</p>
+                    <div class="testimonial-author">
+                        <strong>Priya Sharma</strong>
+                        <span>Legal Professional</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p>"Quick, reliable, and affordable. The consultation sessions are worth every rupee. The AI insights are spot-on and very helpful."</p>
+                    <div class="testimonial-author">
+                        <strong>Amit Patel</strong>
+                        <span>Entrepreneur</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog/Insights Section -->
+    <section id="insights" class="insights">
+        <div class="container">
+            <h2>Latest Legal Insights</h2>
+            <div class="insights-grid">
+                <article class="insight-card">
+                    <h3>Streamlining Contract Analysis with Advanced NLP Technology</h3>
+                    <p>In today's fast-paced business world, contracts are everywhere. They are the backbone of agreements, partnerships, and transactions...</p>
+                    <div class="insight-meta">
+                        <span class="insight-author">Legal Expert</span>
+                        <span class="insight-time">4 min read</span>
+                        <span class="insight-date">5 days ago</span>
+                    </div>
+                </article>
+                <article class="insight-card">
+                    <h3>Navigating Legal Documents with AI-Powered Insights</h3>
+                    <p>In today's fast-paced world, legal documents can feel overwhelming. Whether you are a business owner, a student, or someone dealing with...</p>
+                    <div class="insight-meta">
+                        <span class="insight-author">Legal Expert</span>
+                        <span class="insight-time">4 min read</span>
+                        <span class="insight-date">13 hours ago</span>
+                    </div>
+                </article>
+                <article class="insight-card">
+                    <h3>Enhance Your Legal Decision-Making with InsightLegal</h3>
+                    <p>In today's fast-paced world, making informed legal decisions is more crucial than ever. Whether you are a lawyer, a business owner, or...</p>
+                    <div class="insight-meta">
+                        <span class="insight-author">Legal Expert</span>
+                        <span class="insight-time">3 min read</span>
+                        <span class="insight-date">1 week ago</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-items">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How accurate is the AI legal analysis?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our AI system is trained on extensive legal databases and provides highly accurate analysis. However, we always recommend consulting with legal professionals for complex matters.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is my data secure on your platform?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we use bank-level encryption and security measures to protect all your documents and personal information. Your data is never shared with third parties.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How quickly can I get results?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Document analysis typically takes 2-5 minutes, risk assessments are completed within minutes, and consultation appointments can be scheduled within 24 hours.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What types of documents can be analyzed?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We support analysis of contracts, agreements, legal notices, court documents, compliance documents, and most other legal paperwork in PDF, DOC, and image formats.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About InsightLegal</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>InsightLegal is at the forefront of legal technology, combining artificial intelligence with legal expertise to provide innovative solutions for businesses and individuals. Our platform democratizes access to legal analysis and makes complex legal processes more accessible and affordable.</p>
+                    <p>Founded by a team of legal professionals and AI experts, we understand the challenges faced in traditional legal processes and have built a platform that addresses these pain points with cutting-edge technology.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="about-stat">
+                        <h3>5+</h3>
+                        <p>Years of Experience</p>
+                    </div>
+                    <div class="about-stat">
+                        <h3>50+</h3>
+                        <p>Legal Experts</p>
+                    </div>
+                    <div class="about-stat">
+                        <h3>1000+</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <strong>Email:</strong> contact@insightlegal.com
+                    </div>
+                    <div class="contact-item">
+                        <strong>Phone:</strong> +91 98765 43210
+                    </div>
+                    <div class="contact-item">
+                        <strong>Address:</strong> 123 Legal District, Mumbai, India
+                    </div>
+                    <div class="contact-item">
+                        <strong>Business Hours:</strong> Mon-Fri 9AM-6PM IST
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Subject</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>InsightLegal</h3>
+                    <p>Your trusted AI legal partner for document analysis, risk assessment, and expert consultation.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Document Analysis</a></li>
+                        <li><a href="#services">Risk Assessment</a></li>
+                        <li><a href="#services">Legal Consultation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#insights">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" target="_blank">LinkedIn</a>
+                        <a href="#" target="_blank">Twitter</a>
+                        <a href="#" target="_blank">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 InsightLegal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Chat Bot -->
+    <div class="chatbot-trigger" onclick="toggleChatbot()">
+        <span class="chatbot-icon">💬</span>
+    </div>
+
+    <!-- Modals -->
+    <!-- AI Chatbot Modal -->
+    <div id="chatbotModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>AI Legal Assistant</h3>
+                <button class="modal-close" onclick="closeChatbot()">&times;</button>
+            </div>
+            <div class="chat-container">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="chat-message bot">
+                        <p>Hello! I'm your AI legal assistant. How can I help you today?</p>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="chatInput" placeholder="Ask me anything about legal matters...">
+                    <button onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Document Analysis Modal -->
+    <div id="documentModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Document Analysis - ₹100</h3>
+                <button class="modal-close" onclick="closeDocumentAnalysis()">&times;</button>
+            </div>
+            <div class="document-upload">
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-icon">📄</div>
+                    <h4>Upload Your Legal Document</h4>
+                    <p>Drag and drop your file here or click to browse</p>
+                    <input type="file" id="fileInput" accept=".pdf,.doc,.docx" style="display: none;">
+                    <button class="btn btn--secondary" onclick="document.getElementById('fileInput').click()">Choose File</button>
+                </div>
+                <div class="analysis-progress hidden" id="analysisProgress">
+                    <h4>Analyzing Document...</h4>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <p id="progressText">Initializing analysis...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Risk Assessment Modal -->
+    <div id="riskModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Risk Assessment - ₹80</h3>
+                <button class="modal-close" onclick="closeRiskAssessment()">&times;</button>
+            </div>
+            <div class="risk-assessment">
+                <form id="riskForm">
+                    <div class="form-group">
+                        <label class="form-label">Business Type</label>
+                        <select class="form-control" required>
+                            <option value="">Select business type</option>
+                            <option value="startup">Startup</option>
+                            <option value="small-business">Small Business</option>
+                            <option value="corporation">Corporation</option>
+                            <option value="non-profit">Non-Profit</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Industry</label>
+                        <select class="form-control" required>
+                            <option value="">Select industry</option>
+                            <option value="technology">Technology</option>
+                            <option value="healthcare">Healthcare</option>
+                            <option value="finance">Finance</option>
+                            <option value="retail">Retail</option>
+                            <option value="manufacturing">Manufacturing</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Number of Employees</label>
+                        <select class="form-control" required>
+                            <option value="">Select range</option>
+                            <option value="1-10">1-10</option>
+                            <option value="11-50">11-50</option>
+                            <option value="51-200">51-200</option>
+                            <option value="200+">200+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Primary Concerns (check all that apply)</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" value="contracts"> Contract Management</label>
+                            <label><input type="checkbox" value="compliance"> Regulatory Compliance</label>
+                            <label><input type="checkbox" value="intellectual-property"> Intellectual Property</label>
+                            <label><input type="checkbox" value="employment"> Employment Law</label>
+                            <label><input type="checkbox" value="data-protection"> Data Protection</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">Generate Risk Assessment</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Consultation Booking Modal -->
+    <div id="consultationModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Book Consultation - ₹150</h3>
+                <button class="modal-close" onclick="closeConsultationBooking()">&times;</button>
+            </div>
+            <div class="consultation-booking">
+                <form id="consultationForm">
+                    <div class="form-group">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Consultation Type</label>
+                        <select class="form-control" required>
+                            <option value="">Select consultation type</option>
+                            <option value="contract-review">Contract Review</option>
+                            <option value="business-compliance">Business Compliance</option>
+                            <option value="legal-advice">General Legal Advice</option>
+                            <option value="dispute-resolution">Dispute Resolution</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Preferred Date</label>
+                        <input type="date" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Preferred Time</label>
+                        <select class="form-control" required>
+                            <option value="">Select time slot</option>
+                            <option value="09:00">9:00 AM</option>
+                            <option value="10:00">10:00 AM</option>
+                            <option value="11:00">11:00 AM</option>
+                            <option value="14:00">2:00 PM</option>
+                            <option value="15:00">3:00 PM</option>
+                            <option value="16:00">4:00 PM</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Brief Description</label>
+                        <textarea class="form-control" rows="3" placeholder="Please describe your legal matter briefly..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">Book Consultation</button>
+                </form>
+            </div>
+        </div>
+    </div>
+<script src="main.js"></script>
+</html>
